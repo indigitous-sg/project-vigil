@@ -6,7 +6,7 @@ const moment = require('moment');
 const router = new Router();
 const admin = require('firebase-admin');
 var fs = require("fs");
-var serviceAccount = JSON.parse(fs.readFileSync('Project Vigil-401886995d80.json')); // Workaround instead of using 'require' which triggers heroku error
+var serviceAccount = JSON.parse(fs.readFileSync('Project-Vigil-401886995d80.json')); // Workaround instead of using 'require' which triggers heroku error
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)

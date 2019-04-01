@@ -5,7 +5,7 @@ const moment = require('moment');
 
 const router = new Router();
 const admin = require('firebase-admin');
-var serviceAccount = require('Project-Vigil-401886995d80.json');
+var serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)

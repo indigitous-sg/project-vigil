@@ -14,6 +14,10 @@
 - Receive information from active users on whether they will respond to call
 - Handle other webhooks from Twilio, e.g. when calls fail
 
+##### Deployment instructions for backend
+- Instructions to deploy from a subfolder on heroku are here: https://stackoverflow.com/questions/39197334/automated-heroku-deploy-from-subfolder
+- Manually add firebase json credentials into heroku dyno. Suggest just 'echo'-ing the credentials as using transfer.sh and gpg does not seem to work reliably and heroku dyno does not have a text editor.
+
 Note: webhooks can be tested with ngrok
 
 #### Frontend

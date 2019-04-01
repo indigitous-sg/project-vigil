@@ -10,8 +10,8 @@
 #### Backend
 
 - Receive webhook from Twilio with transcription and audio URL
-- Store information in firebase, and emit event to users who havbe 'active' status
-- Receive information from active users on whether they will respond to
+- Store information in firebase
+- Receive information from active users on whether they will respond to call
 - Handle other webhooks from Twilio, e.g. when calls fail
 
 Note: webhooks can be tested with ngrok
@@ -19,14 +19,14 @@ Note: webhooks can be tested with ngrok
 #### Frontend
 
 - Handle login using firebase authentication
-- Allow users to toggle active / inactive status
+- Allow users to toggle active / inactive status (whether to receive notifications)
 - Three tabs to differentiate different call statuses: Assigned to me, Open, Closed
 - Ability to play audio given media file url
 
 #### TODO
 
-- Add tests for nodejs backend call flow
-- Rewrite to run backend on Google App Engine so multiple users can test at appspot domain
+- Add more tests for nodejs backend call flow
+- Add more detailed running instructions
 
 
 #### Future Features

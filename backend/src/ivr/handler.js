@@ -29,7 +29,7 @@ exports.welcome = function welcome() {
 
     // Workaround to ask for phone number if there is no response
     voiceResponse.redirect('/ivr/noMenuResponse');
-    
+
     return voiceResponse.toString();
 }
 

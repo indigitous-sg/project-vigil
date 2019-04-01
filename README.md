@@ -2,29 +2,36 @@
 
 #### Twilio
 
-- Set up interactive voice recording flow to receive call
-- After receiving call, play voice recording and take message
-- Store audio recording and transcribe
-- Send transcription and audio URL to backend
+- Set up webhooks for call that is received
+    - After receiving call, play voice recording and take message
+    - Store audio recording and transcribe
+    - Send transcription and audio URL to backend
 
 #### Backend
 
 - Receive webhook from Twilio with transcription and audio URL
 - Store information in firebase, and emit event to users who havbe 'active' status
 - Receive information from active users on whether they will respond to
-- Handle user logins and store user details into firebase
 - Handle other webhooks from Twilio, e.g. when calls fail
 
 Note: webhooks can be tested with ngrok
 
 #### Frontend
 
-- First user will create organisation and be administrator by default
-- Administrator will approve subsequent requests for members of the organisation, and indicate what level of permissions
-- Handle login, use google SSO? Or email / password combination
+- Handle login using firebase authentication
 - Allow users to toggle active / inactive status
-- Each call should be listed, with different status (new / being handled by other user / resolved)
-- There should be filters for different calls
+- Three tabs to differentiate different call statuses: Assigned to me, Open, Closed
+- Ability to play audio given media file url
+
+#### TODO
+
+- Add tests for nodejs backend call flow
+- Rewrite to run backend on Google App Engine so multiple users can test at appspot domain
+
+
+#### Future Features
+
+- Admin console to manage users within specific organisations
 
 #### Running instructions from a Cordova template:
 

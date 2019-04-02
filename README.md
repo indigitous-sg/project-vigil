@@ -37,7 +37,7 @@ Note: webhooks can be tested with ngrok
 
 - Admin console to manage users within specific organisations
 
-#### Running instructions for frontend:
+## Running instructions for frontend
 
 - Manually add firebase credentials to `firebaseConfig.js` in the `src/components` folder as `export default _firebase credentails json_;`
 

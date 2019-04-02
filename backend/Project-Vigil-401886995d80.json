@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "project-vigil",
+  "private_key_id": "401886995d807f8139140b3e82c0ee6dd0b4f672",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGZQyTZ+6wVuFd\njTTcPQeNic5XVoblEHshn9UuxxpKc76VUQJ+5fqZrcAQSL700o0ajAHrV/gdJyxg\nCf6fMY1WEiwCZ/8aOBOzUA2Sqqu2cq9UPxeJmQjXa+SmnodyDaO4Mij/meVIOgyz\n+5qRIersPtbsTVsTlgU+aXvdRTmr8vt/JqX0d7X3WjcTKWL9XD9nmIB78mMsrdWN\nPYP75rp2Pb8eyvphpcroeieyFxdhNeUvd3ZiNZWdAueFTaqHIRC3XJGd7ojxn17D\nXkbK1xUeWI4XaKfF00dFwMUmaoB5e7WUz7i+LawqQFeeBhv7ymdy0uJAkNRGgm9v\nk6H5O/w5AgMBAAECggEAG27BjGhkotGAnBT4aDOwJawWchEu2eGrhPy615sEUaMr\niS4IcE+QlUtnMVk9vlCW3kLZyRcC4dUW17jKEm0ho/MjTrnelluGrda16b/buoCl\nKbsHoCkfBdqPZVKqW+Ty7HdTH/TBtXkBZKm3t7W+7CfMRCR2IYEu/HBNhk0aKmJS\nZOrcUOmTYl7lcSghEhyUS10eNcRImWyaLxZKqWj0AKwzQK7eDxiGkG7k2uhTEuU4\nmfm0qN2Y57r2HU+seVrz6ty5IlA2aRJ9BLQwb2iB1rIYosF5ZmlSdAjDxa1ZDrRm\nbBq2oNFoFGKk6m+QyfbWIf9jPCax2A5fScVjf1lL4QKBgQDuJBCWiDtr2qpm/ydl\nnEw9uSbdbmkbbuYK7UgawoVErJjB1a8AmZUKvZe1M96y6oVMfdJtiKfdUHW79OYd\ndOHw6zBrtkWSjccCjDytFlXo/MCGAjoAfaX54ymSyyEg8e+YLixhjpD5OTOO4X26\nrnEDIZw1HraGDS6x4rJSjBn/TQKBgQDVRet7LJA9WDrAM0OizaouxQ9z2cTDmMuz\nd//7yu9KdocaahoIpFdUDnsENhfn2O82WcdsyBaDGGfw91pWEWpPfQ4IqlHgQym3\nmR/Cn0pjlHWkZKyWOObSoShoBM97jUTkt67YhucyWq8SJ8/fwv35ADTj1kIYeLaw\nm5t/UTMSnQKBgCpwFOCukGBNDHbkW4H5E4EgYLOvPF3eKnKiDGpwZc1yMJrCWLhz\npiLO3J03DCW4M18JQRmx87A16XVAVE3FiYokb3GSft16FI/4q8twooitmiWHegyi\nV5SrjboSJuo3Eyp8d/4+qMkxD2YT+xLsiUk0kSDKQ16qNLsQmhSp0Ow1AoGBAJMA\nIpM/4BuoWLZpn1Dz2T1rbn83trvq8Vy+dZ6j/dOhZvX58//I5rh1Uq1Qa6HOkPMx\nZpfAQmQRynL4yzdPwasQUz/9xXmCUZrO3GlVSfzhM0UgbyUMC21az3MC/c/3S2kq\ngkWUln7Kqqkk788Xo96hGdOAtwYPDj0kxEU5Pq6xAoGAaw5mwMdLszxUas3rwq2r\nrjY6lv6lSx3hegRpFbwP97ppO9rPdBHjJ+KrIGaFW/6Dbz306YeFO635qBlV8w1J\nHsJZPDmMtGPyN+3LI2Lyya64S7D6vuezHDJ9wRZFuKFUuF5sLkbqx+ubVOsvjzhZ\nTl2+KXu63MuJztJOUDWAMr4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-lhht4@project-vigil.iam.gserviceaccount.com",
+  "client_id": "102381101085121478335",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-lhht4%40project-vigil.iam.gserviceaccount.com"
+}

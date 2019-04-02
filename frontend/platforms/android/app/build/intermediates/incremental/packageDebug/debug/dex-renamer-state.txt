@@ -1,4 +1,0 @@
-#Tue Apr 02 23:16:07 SGT 2019
-base.0=/Users/andrewtan/development/vigil/project-vigil/frontend/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

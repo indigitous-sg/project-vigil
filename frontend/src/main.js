@@ -24,7 +24,7 @@ import App from './app';
 // Import Firestore Stuff
 //import VueFire from 'vuefire'
 //import Vuefire from '../node_modules/vuefire/dist/vuefire'
-import {firestorePlugin} from 'vuefire'
+import { firestorePlugin } from 'vuefire'
 
 import firebase from 'firebase/app'
 import 'firebase/firestore'
@@ -35,16 +35,6 @@ import firebaseConfig from './components/firebaseConfig'
 // Init F7 Vue Plugin
 Framework7.use(Framework7Vue);
 
-// Init App
-const baseApp = new Vue({
-  el: '#app',
-  template: '<app/>',
-  // Register App Component
-  components: {
-    app: App
-  }
-});
-
 // Init Firestore
 //Vue.use(VueFire)
 Vue.use(firestorePlugin)
@@ -52,3 +42,13 @@ Vue.use(firestorePlugin)
 firebase.initializeApp(firebaseConfig)
 
 export const db = firebase.firestore()
+
+// Init App
+const baseApp = new Vue({
+    el: '#app',
+    template: '<app/>',
+    // Register App Component
+    components: {
+        app: App
+    }
+});

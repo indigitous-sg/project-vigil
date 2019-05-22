@@ -4,7 +4,6 @@ The frontend is a vue.js based mobile/web application that displays the latest c
 
 #### Main Features
 
-- Handle login using firebase authentication
 - Allow users to toggle active / inactive status (whether to receive notifications)
 - Tabs to differentiate call status
 - Ability to play audio given media file url
@@ -12,7 +11,7 @@ The frontend is a vue.js based mobile/web application that displays the latest c
 
 #### Running instructions for frontend
 
-- Manually add firebase credentials to `firebaseConfig.js` in the `src/components` folder as `export default _firebase credentails json_;`
+- Manually add firebase credentials to `firebaseConfig.js` in the `src/components` folder as `export default {firebase credentails json};`
 
 ```
 npm install
@@ -65,3 +64,7 @@ After that, the normal Cordova / PhoneGap commands can be used such as `phonegap
 #### Other running instructions
 
 - To set up webhooks for testing, run ngrok http 3000 (assuming node app is listening on port 3000) and configure webhooks for voice response manually on twilio console. Alternatively, develop on a branch in the GitHub repo and use that for testing by deploying the branch in the Heroku dashboard.
+
+#### TODO:
+
+- Add login using firebase authentication

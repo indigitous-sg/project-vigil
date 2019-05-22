@@ -11,6 +11,7 @@
 
 <script>
 import routes from "./routes";
+import { db } from "./main";
 
 export default {
   data() {
@@ -51,6 +52,41 @@ export default {
   },
   created() {
     document.addEventListener("backbutton", this.handleBackButton);
+    document.addEventListener("deviceready", function(){
+
+    var storeToken  = (token) => {
+      const createdAt = new Date();
+      db.collection('registration_tokens').add({
+        token, createdAt
+      })
+    }
+
+    // Adding code to get FCM token based on https://docs.monaca.io/en/tutorials/firebase/
+    window.FirebasePlugin.getToken(function(token) {
+        // save this server-side and use it to push notifications to this device
+        console.log('Got Token: ' + token);
+        storeToken(token);
+    }, function(error) {
+        console.error(error);
+    });
+
+    // Get notified when a token is refreshed
+    window.FirebasePlugin.onTokenRefresh(function(token) {
+        // save this server-side and use it to push notifications to this device
+        console.log("Refresh to get new token: " + token);
+        storeToken(token);
+    }, function(error) {
+        alert(error);
+    });
+
+    // // Get notified when the user opens a notification
+    // window.FirebasePlugin.onNotificationOpen(function(notification) {
+    //     console.log(JSON.stringify(notification));
+    //     alert("The notification is open!");
+    // }, function(error) {
+    //     console.error(error);
+    // });    
+}, false);
   },
 };
 </script>

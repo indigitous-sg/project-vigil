@@ -57,3 +57,5 @@ Thumbs.db
 *.log
 *.swp
 *.user
+
+google-services.json

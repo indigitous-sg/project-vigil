@@ -13,21 +13,19 @@ The backend is a node.js application that receives webhooks from calls received 
 
 - Receive webhook from Twilio with transcription and audio URL
 - Store information in firebase
+- Send firebase notification once new call is received.
 - Receive information from active users on whether they will respond to call
 - Handle other webhooks from Twilio, e.g. when calls fail
 
-##### Deployment instructions for backend
+#### Deployment instructions for backend
 - Instructions to deploy from a subfolder on heroku are here: https://stackoverflow.com/questions/39197334/automated-heroku-deploy-from-subfolder
 - Manually add firebase json credentials into heroku 'Settings' -> 'Config Vars'.
 
+#### Local Testing
+
+- `node index.js` to start server on localhost:3000, ensure that `process.env.FIREBASE_CREDENTIALS` has been set
+- Use `ngrok` to tcp tunnel out, if testing with Twilio, but the endpoint must be manually changed in the Twilio console
 Note: webhooks can be also tested with ngrok
-
-#### Frontend
-
-- Handle login using firebase authentication
-- Allow users to toggle active / inactive status (whether to receive notifications)
-- Three tabs to differentiate different call statuses: Assigned to me, Open, Closed
-- Ability to play audio given media file url
 
 #### TODO
 

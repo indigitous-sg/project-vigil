@@ -2,6 +2,14 @@
 
 The frontend is a vue.js based mobile/web application that displays the latest calls received. It uses framework7 so that the applications have native look and feel. 
 
+#### Main Features
+
+- Handle login using firebase authentication
+- Allow users to toggle active / inactive status (whether to receive notifications)
+- Tabs to differentiate call status
+- Ability to play audio given media file url
+
+
 #### Running instructions for frontend
 
 - Manually add firebase credentials to `firebaseConfig.js` in the `src/components` folder as `export default _firebase credentails json_;`
